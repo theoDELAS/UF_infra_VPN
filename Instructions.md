@@ -4,7 +4,7 @@ Avoir un Raspberry Pi sous Raspbian qui doit être accessible depuis Internet. P
 Le client, qui se connectera donc au Raspberry Pi, devra être sous une distribution Linux supportant le logiciel libre OpenVPN.  
 
 ## II- Installation d'OpenVPN  
-Mettre a jour son OS :  
+Mettre à jour son OS :  
 ```
 sudo apt-get update  
 sudo apt-get upgrade
@@ -15,7 +15,7 @@ Installer les logiciels **OpenVPN** et **openssl** permettant de créer un VPN :
 sudo apt-get install openvpn openssl
 ```  
 
-Coper le répertoire **easy-rsa** dans le répertoire **openvpn** :  
+Copier le répertoire **easy-rsa** dans le répertoire **openvpn** :  
 ```
 sudo cp -r /usr/share/easy-rsa /etc/openvpn/
 ```  
@@ -134,7 +134,7 @@ verb 3
 **x.x.x.x** étant l’adresse IP publique du réseau sur lequel est connecté le VPN.
 
 ## VII- Lancement du VPN  
-Pour faire fonctionner le VPN, se placer dans le dossier « **openVPN** » pour le serveurr et le client.  
+Pour faire fonctionner le VPN, se placer dans le dossier « **openVPN** » pour le serveur et le client.  
 Dans un premier temps, sur le serveur, faire la commande `sudo openvpn server.conf`, et dans un deuxième temps, lorsque le serveur sera lancé, faire la commande `sudo openvpn client.conf` sur le client.  
 
 Le client se connectera alors au serveur et les données envoyées depuis le client passeront d'abord par le VPN avant d'être envoyées sur internet.  
