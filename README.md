@@ -6,8 +6,8 @@ Théo Delas
 
 Donne un accès externe aux membres d’un réseau, souvent à travers Internet.
 
-> Accès distant
-  >Pour la maquette, de préférence chez vous (les élèves)
+* Accès distant
+ * Pour la maquette, de préférence chez vous (les élèves)
   >pour exposer une vraie IP(publique):Port de votre box
   >une Raspberry c’est très bien
 >Gestion firewall
