@@ -139,6 +139,12 @@ Dans un premier temps, sur le serveur, faire la commande `sudo openvpn server.co
 
 Le client se connectera alors au serveur et les données envoyées depuis le client passeront d'abord par le VPN avant d'être envoyées sur internet.  
 
+## VIII- Ajouter un nouvel utilisateur
+Pour ajouter un nouvel utilisateur, il faut recréer de nouvelles clés spécifiques à ce nouvel utilisateur (voir la partie **III- Génération des certificats**).
+Suivre ensuite les instructions du la partie **IV- Configuration du client** en prenant les nouvelles clés créées.  
+Lancer ensuite le VPN grâce a la commande `sudo openvpn server.conf` sur le serveur et `sudo openvpn client.conf` côté client (partie **VII- Lancement du VPN**).
+
+
 ## VII- Révoquer un utilisateur  
 Se placer dans le dossier « **easy-rsa** » :  
 ```
